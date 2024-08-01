@@ -32,7 +32,7 @@ jobs:
       run: |
         chmod +x gradlew
         ./gradlew build
-        cd app/build/outputs/apk/release && mv *.apk qinglong-jd-$(date '+%Y%m%d%H%M%S').apk
+        cd app/build/outputs/apk/release && mv *.apk qinglong-jd.apk
 
     - name: 签名 apk
       id: sign_app
